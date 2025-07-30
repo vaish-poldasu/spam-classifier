@@ -1,6 +1,10 @@
 import streamlit as st
 import pickle
 import nltk
+print(nltk.__version__)
+nltk.download('punkt')
+print("Punkt resource downloaded")
+nltk.download('stopwords') 
 from nltk.corpus import stopwords
 import string
 from nltk.stem import PorterStemmer
